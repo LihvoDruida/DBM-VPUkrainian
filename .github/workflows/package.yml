@@ -62,6 +62,7 @@ jobs:
           config: cliff.toml
           args: --verbose
         env:
+          FINAL_VERSION: ${{ env.FINAL_VERSION }}
           OUTPUT: CHANGELOG.md
 
       - name: Save Changelog in Variable
